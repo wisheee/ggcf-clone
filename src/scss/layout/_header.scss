@@ -6,17 +6,27 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 5rem;
+  height: 5.5rem;
   padding: 0 2rem;
-  box-shadow: 0 0 5px rgba(160, 160, 160, 0.3);
   background-color: #fff;
   z-index: $z-header;
 }
 h1 {
-  font-size: 2rem;
-  color: #388087;
+  a {
+    display: inline-block;
+    width: 20rem;
+    padding-bottom: 20%;
+    background: url(#{$path-images}common/main-logo.svg) no-repeat;
+    background-size: contain;
+
+    span {
+      @include text-hidden;
+    }
+  }
 }
 .gnb {
+  display: none;
+  
   ul {
     display: flex;
   }
@@ -25,5 +35,34 @@ h1 {
     font-size: 1.5rem;
     padding: 0 1em;
     color: #6fb3b8;
+  }
+}
+.lnb-check {
+  display: none;
+}
+label[for='lnb-check'] {
+  position: relative;
+  display: inline-block;
+  width: 2.2rem;
+  height: 1.6rem;
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: $c-main-blue;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+    }
+
+    &:nth-child(3) {
+      top: 100%;
+    }
   }
 }
