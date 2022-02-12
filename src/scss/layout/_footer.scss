@@ -1,14 +1,89 @@
 footer {
   position: relative;
-  padding: 3em;
-  font-size: 1.4rem;
-  background: #39424c;
-  color: #b2bbc3;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  background: $c-black;
+  color: #767676;
 
-  span {
-    display: inline-block;
-    font-size: 1.2rem;
-    padding: 0.8em 0 1.2em;
-    color: #647586;
+  p {
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+.terms-info-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.4rem;
+  border-bottom: 1px solid #484848;
+
+  a {
+    padding: 0 1rem;
+    color: #fff;
+  }
+}
+
+.sns-list {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 2rem;
+
+  a {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.footer-logo-wrap {
+  img {
+    width: 9.6rem;
+  }
+}
+
+.family-site-btn-wrap {
+  position: relative;
+  width: 19.5rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  text-align: left;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.3rem;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #4c4c4c;
+    color: #7b7b7b;
+  }
+
+  ul {
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+    width: 100%;
+    border: 1px solid #4c4c4c;
+    border-bottom: none;
+    background-color: #404040;
+    display: none;
+
+    li {
+      padding: 0 1.3rem;
+      line-height: 4rem;
+      color: #fff;
+      border-bottom: 1px solid #4c4c4c;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &.expand ul {
+    display: block;
   }
 }
