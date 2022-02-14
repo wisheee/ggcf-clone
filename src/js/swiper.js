@@ -29,4 +29,10 @@ export const init = () => {
       delay: 3000,
     }
   });
+
+  new Swiper('.news-section .swiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10
+  });
 };

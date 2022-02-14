@@ -1,0 +1,62 @@
+.news-section {
+  padding: 12rem 1rem 8rem;
+  background-color: $c-light-blue;
+
+  h3 {
+    font-size: 2.6rem;
+    margin-bottom: 2em;
+    @include font-gmarket('Bold');
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+}
+
+.news-info-wrap {
+  display: block;
+  position: relative;
+  padding: 4rem 3rem;
+  background-color: #fff;
+}
+
+.news-info-notice {
+  font-size: 1.4rem;
+  color: #ababab;
+}
+
+.news-info-title {
+  margin: 1rem 0 2rem;
+  height: 6rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  @include ellipsis(2);
+}
+
+.news-info-content {
+  margin-bottom: 4rem;
+  height: 6.6rem;
+  color: #787d86;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  @include ellipsis(3);
+}
+
+.news-info-footer {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-size: 3rem;
+    color: #777;
+  }
+}
+
+.news-info-date {
+  font-size: 1.2rem;
+  color: #ababab;
+  @include font-gmarket;
+}
