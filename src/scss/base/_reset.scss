@@ -31,11 +31,9 @@ ol, ul, li, dl {
 a {
 	&:link, &:visited {
 		text-decoration: none;
-  	color: inherit;
 	}
 	&:hover, &:active {
 		text-decoration: none;
-  	color: inherit;
 		outline: 0;
 	}
 	&:focus {

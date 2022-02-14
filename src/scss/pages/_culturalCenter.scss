@@ -1,0 +1,50 @@
+.cultural-center-section {
+  padding: 12rem 1rem 2rem;
+
+  h3 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    @include font-gmarket('Bold');
+  }
+}
+
+.cultural-center-img-wrap {
+  padding: 1rem 0;
+  border-radius: 2.2rem;
+  overflow: hidden;
+
+  img {
+    transition: 0.5s;
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+}
+
+.cultural-center-btn-wrap {
+  padding: 1rem 0;
+
+  ul {
+    display: flex;
+    padding: 0.5rem 0;
+  }
+
+  button {
+    margin-right: 0.5rem;
+    padding: 0 1.2rem;
+    height: calc(3rem + 3.3vw);
+    color: $c-main-blue;
+    background-color: #fff;
+    border: 1.5px solid $c-main-blue;
+    border-radius: calc(3rem + 3.3vw);
+    font-size: calc(0.8rem + 1.07vw);
+    @include font-gmarket('Medium');
+
+    &.cultural-center-active {
+      color: #fff;
+      background-color: $c-main-blue;
+    }
+  }
+}

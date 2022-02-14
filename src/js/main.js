@@ -3,6 +3,8 @@ import { init } from './swiper';
 (() => {
   const container = document.querySelector('.container');
   const familySiteWrap = document.querySelector('.js-family-site-btn-wrap');
+  const culturalCenterImg = document.querySelector('.js-cultural-center-img');
+  let currentCulturalCenterBtn = document.querySelector('.cultural-center-active');
 
   container.addEventListener('click', e => {
 
@@ -13,7 +15,21 @@ import { init } from './swiper';
     } else {
       familySiteWrap.classList.remove('expand');
     }
-    
+
+    // 생활문화센터공간 버튼 클릭 이벤트
+    let culturalCenterBtn = getTarget(e.target, 'js-cultural-center-btn');
+    if (culturalCenterBtn) {
+      culturalCenterImg.classList.add('hidden');
+      setTimeout(() => {
+        culturalCenterImg.setAttribute('src', `../images/culturalCenter/space_${culturalCenterBtn.dataset.imgNum}.png`);
+        culturalCenterImg.setAttribute('alt', culturalCenterBtn.dataset.alt);
+        culturalCenterImg.classList.remove('hidden');
+      }, 500);
+      
+      currentCulturalCenterBtn.classList.remove('cultural-center-active');
+      culturalCenterBtn.classList.add('cultural-center-active');
+      currentCulturalCenterBtn = culturalCenterBtn;
+    }
   });
 
   function getTarget(elem, className) {
