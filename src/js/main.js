@@ -21,7 +21,7 @@ import { init } from './swiper';
     if (culturalCenterBtn) {
       culturalCenterImg.classList.add('hidden');
       setTimeout(() => {
-        culturalCenterImg.setAttribute('src', `../images/culturalCenter/space_${culturalCenterBtn.dataset.imgNum}.png`);
+        culturalCenterImg.setAttribute('src', `images/cultural_center/space_${culturalCenterBtn.dataset.imgNum}.png`);
         culturalCenterImg.setAttribute('alt', culturalCenterBtn.dataset.alt);
         culturalCenterImg.classList.remove('hidden');
       }, 500);
