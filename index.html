@@ -41,25 +41,24 @@
       </li>
     </ul>
   </nav>
-  <input type="checkbox" id="lnb-check" class="lnb-check">
-  <label for="lnb-check">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+  <button type="button" class="side-menu-open-btn js-side-menu-open-btn"><i class="xi-bars"></i></button>
 </header>
-    <div class="side-menu-wrap">
+    <div class="side-menu-container js-side-menu-container">
   <div class="side-menu-header">
-    <a href="#none" class="side-menu-login-btn">로그인</a>
-    <button type="button" class="side-menu-close-btn"></button>
-    <input type="text" class="side-menu-search-input">
-    <button type="button" class="side-menu-search-btn"></button>
+    <div class="side-menu-header-btn-wrap">
+      <a href="#none" class="side-menu-login-btn">로그인</a>
+      <button type="button" class="side-menu-close-btn js-side-menu-close-btn"><i class="xi-close"></i></button>
+    </div>
+    <form class="side-menu-search-form">
+      <input type="text" placeholder="검색어를 입력해주세요.">
+      <button type="submit"><i class="xi-search"></i></button>
+    </form>
   </div>
   <nav>
-    <ul>
+    <ul class="side-menu-wrap">
       <li>
-        <button type="button">경기생활문화센터</button>
-        <ul>
+        <button type="button" class="side-menu-list-btn js-side-menu-list-btn">경기생활문화센터</button>
+        <ul class="sub-side-menu-wrap">
           <li>
             <a href="#none">센터소개</a>
           </li>
@@ -75,8 +74,8 @@
         </ul>
       </li>
       <li>
-        <button type="button">경기도생활문화</button>
-        <ul>
+        <button type="button" class="side-menu-list-btn js-side-menu-list-btn">경기도생활문화</button>
+        <ul class="sub-side-menu-wrap">
           <li>
             <a href="#none">우리지역 생활문화공간</a>
           </li>
@@ -86,8 +85,8 @@
         </ul>
       </li>
       <li>
-        <button type="button">기록자료</button>
-        <ul>
+        <button type="button" class="side-menu-list-btn js-side-menu-list-btn">기록자료</button>
+        <ul class="sub-side-menu-wrap">
           <li>
             <a href="#none">영상채널</a>
           </li>
@@ -97,8 +96,8 @@
         </ul>
       </li>
       <li>
-        <button type="button">웹진</button>
-        <ul>
+        <button type="button" class="side-menu-list-btn js-side-menu-list-btn">웹진</button>
+        <ul class="sub-side-menu-wrap">
           <li>
             <a href="#none">소개</a>
           </li>
@@ -108,8 +107,8 @@
         </ul>
       </li>
       <li>
-        <button type="button">소통</button>
-        <ul>
+        <button type="button" class="side-menu-list-btn js-side-menu-list-btn">소통</button>
+        <ul class="sub-side-menu-wrap">
           <li>
             <a href="#none">공지사항</a>
           </li>
@@ -166,7 +165,7 @@
       <a href="#none">
         <span>
           우리지역 생활문화공간
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="xi-long-arrow-right"></i>
         </span>
       </a>
     </li>
@@ -174,7 +173,7 @@
       <a href="#none">
         <span>
           생활문화 찾기
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="xi-long-arrow-right"></i>
         </span>
       </a>
     </li>
@@ -182,7 +181,7 @@
       <a href="#none">
         <span>
           경기상상캠퍼스
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="xi-long-arrow-right"></i>
         </span>
       </a>
     </li>
@@ -190,7 +189,7 @@
       <a href="#none">
         <span>
           온라인 문의
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="xi-long-arrow-right"></i>
         </span>
       </a>
     </li>
@@ -200,12 +199,12 @@
   <h3>이달의 생활문화</h3>
   <div class="month-info-wrap">
     <button>
-      <i class="fa-solid fa-chevron-left"></i>
+      <i class="xi-angle-left"></i>
       <span>이전</span>
     </button>
     <div>2022. 02</div>
     <button>
-      <i class="fa-solid fa-chevron-right"></i>
+      <i class="xi-angle-right"></i>
       <span>다음</span>
     </button>
   </div>
@@ -221,11 +220,11 @@
               </p>
               <div class="schedule-wrap">
                 <div>
-                  <i class="fa-solid fa-location-arrow"></i>
+                  <i class="xi-maker"></i>
                   화성시생활문화센터 - 라무통위빙
                 </div>
                 <div>
-                  <i class="fa-solid fa-calendar"></i>
+                  <i class="xi-calendar-check"></i>
                   2022.01.25 ~ 2023.01.31
                 </div>
               </div>
@@ -252,11 +251,11 @@
               </p>
               <div class="schedule-wrap">
                 <div>
-                  <i class="fa-solid fa-location-arrow"></i>
+                  <i class="xi-maker"></i>
                   화성시생활문화센터 - 바느질마텨
                 </div>
                 <div>
-                  <i class="fa-solid fa-calendar"></i>
+                  <i class="xi-calendar-check"></i>
                   2022.01.28 ~ 2023.01.31
                 </div>
               </div>
@@ -283,11 +282,11 @@
               </p>
               <div class="schedule-wrap">
                 <div>
-                  <i class="fa-solid fa-location-arrow"></i>
+                  <i class="xi-maker"></i>
                   화성시생활문화센터 - 나마네
                 </div>
                 <div>
-                  <i class="fa-solid fa-calendar"></i>
+                  <i class="xi-calendar-check"></i>
                   2022.01.25 ~ 2023.01.31
                 </div>
               </div>
@@ -314,11 +313,11 @@
               </p>
               <div class="schedule-wrap">
                 <div>
-                  <i class="fa-solid fa-location-arrow"></i>
+                  <i class="xi-maker"></i>
                   화성시생활문화센터 - 미미네공방
                 </div>
                 <div>
-                  <i class="fa-solid fa-calendar"></i>
+                  <i class="xi-calendar-check"></i>
                   2022.01.25 ~ 2023.01.31
                 </div>
               </div>
@@ -406,7 +405,7 @@
           </p>
           <div class="news-info-footer">
             <span class="news-info-date">2021. 12. 28</span>
-            <i class="fa-solid fa-plus"></i>
+            <i class="xi-plus-thin"></i>
           </div>
         </a>
       </li>
@@ -419,7 +418,7 @@
           </p>
           <div class="news-info-footer">
             <span class="news-info-date">2021. 12. 28</span>
-            <i class="fa-solid fa-plus"></i>
+            <i class="xi-plus-thin"></i>
           </div>
         </a>
       </li>
@@ -432,7 +431,7 @@
           </p>
           <div class="news-info-footer">
             <span class="news-info-date">2021. 11. 23</span>
-            <i class="fa-solid fa-plus"></i>
+            <i class="xi-plus-thin"></i>
           </div>
         </a>
       </li>
@@ -450,10 +449,10 @@
     <li><a href="#none">클린신고센터</a></li>
   </ul>
   <ul class="sns-list">
-    <li><a href="#none"><i class="fa-brands fa-facebook"></i></a></li>
-    <li><a href="#none"><i class="fa-brands fa-twitter"></i></a></li>
-    <li><a href="#none"><i class="fa-brands fa-youtube"></i></a></li>
-    <li><a href="#none"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#none"><i class="xi-facebook-official"></i></a></li>
+    <li><a href="#none"><i class="xi-kakaotalk"></i></a></li>
+    <li><a href="#none"><i class="xi-youtube-play"></i></a></li>
+    <li><a href="#none"><i class="xi-instagram"></i></a></li>
   </ul>
   <div class="footer-logo-wrap">
     <a href="/"><img src="images/common/main-logo-gray.svg" alt="로고"></a>
@@ -464,7 +463,7 @@
     COPYRIGHT©GGCF. ALL RIGHTS RESERVED.
   </p>
   <div class="family-site-btn-wrap js-family-site-btn-wrap">
-    <button type="button" class="js-family-site-btn">패밀리 사이트<i class="fa-solid fa-angle-up"></i></button>
+    <button type="button" class="js-family-site-btn">패밀리 사이트<i class="xi-angle-up-min"></i></button>
     <ul>
       <li><a href="#none">경기상상캠퍼스</a></li>
       <li><a href="#none">e상상캠퍼스</a></li>
