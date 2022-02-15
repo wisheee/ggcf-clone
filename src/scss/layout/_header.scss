@@ -37,32 +37,8 @@ h1 {
     color: #6fb3b8;
   }
 }
-.lnb-check {
-  display: none;
-}
-label[for='lnb-check'] {
-  position: relative;
-  display: inline-block;
-  width: 2.2rem;
-  height: 1.6rem;
-
-  span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0.2rem;
-    background-color: $c-main-blue;
-
-    &:first-child {
-      top: 0;
-    }
-
-    &:nth-child(2) {
-      top: 50%;
-    }
-
-    &:nth-child(3) {
-      top: 100%;
-    }
-  }
+.side-menu-open-btn {
+  height: 5rem;
+  font-size: 3rem;
+  color: $c-main-blue;
 }
