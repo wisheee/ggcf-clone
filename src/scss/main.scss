@@ -3,8 +3,8 @@
 // ---* Font import *---
 // Noto Sans
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,500&display=swap');
-// Font Awesome
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+// XE Icon
+@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 // Gmarket Sans
 @font-face {
   font-family: 'GmarketSansMedium';
@@ -39,6 +39,7 @@
 @import 'components/buttons';
 
 @import 'layout/header';
+@import 'layout/sideMenu';
 @import 'layout/footer';
 
 @import 'pages/intro';
