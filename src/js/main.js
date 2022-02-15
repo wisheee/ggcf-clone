@@ -23,8 +23,10 @@ import { init } from './swiper';
       setTimeout(() => {
         culturalCenterImg.setAttribute('src', `images/cultural_center/space_${culturalCenterBtn.dataset.imgNum}.png`);
         culturalCenterImg.setAttribute('alt', culturalCenterBtn.dataset.alt);
+      }, 300);
+      setTimeout(() => {
         culturalCenterImg.classList.remove('hidden');
-      }, 500);
+      }, 400);
       
       currentCulturalCenterBtn.classList.remove('cultural-center-active');
       culturalCenterBtn.classList.add('cultural-center-active');
