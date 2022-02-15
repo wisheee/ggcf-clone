@@ -16,9 +16,12 @@
 
   img {
     transition: 0.3s;
+    display: none;
+    opacity: 0;
 
-    &.hidden {
-      opacity: 0;
+    &.cultural-center-active {
+      display: block;
+      animation: fade-in 1s forwards;
     }
   }
 }

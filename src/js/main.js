@@ -3,8 +3,9 @@ import { init } from './swiper';
 (() => {
   const container = document.querySelector('.container');
   const familySiteWrap = document.querySelector('.js-family-site-btn-wrap');
-  const culturalCenterImg = document.querySelector('.js-cultural-center-img');
-  let currentCulturalCenterBtn = document.querySelector('.cultural-center-active');
+  const culturalCenterActiveClass = 'cultural-center-active';
+  let currentCulturalCenterImg = document.querySelector(`.cultural-center-img-wrap .${culturalCenterActiveClass}`);
+  let currentCulturalCenterBtn = document.querySelector(`.js-cultural-center-btn.${culturalCenterActiveClass}`);
 
   container.addEventListener('click', e => {
 
@@ -19,17 +20,13 @@ import { init } from './swiper';
     // 생활문화센터공간 버튼 클릭 이벤트
     let culturalCenterBtn = getTarget(e.target, 'js-cultural-center-btn');
     if (culturalCenterBtn) {
-      culturalCenterImg.classList.add('hidden');
-      setTimeout(() => {
-        culturalCenterImg.setAttribute('src', `images/cultural_center/space_${culturalCenterBtn.dataset.imgNum}.png`);
-        culturalCenterImg.setAttribute('alt', culturalCenterBtn.dataset.alt);
-      }, 300);
-      setTimeout(() => {
-        culturalCenterImg.classList.remove('hidden');
-      }, 400);
+      const culturalCenterImg = document.querySelector(`.js-cultural-center-img-${culturalCenterBtn.dataset.imgNum}`);
+      currentCulturalCenterImg.classList.remove(culturalCenterActiveClass);
+      culturalCenterImg.classList.add(culturalCenterActiveClass);
+      currentCulturalCenterImg = culturalCenterImg;
       
-      currentCulturalCenterBtn.classList.remove('cultural-center-active');
-      culturalCenterBtn.classList.add('cultural-center-active');
+      currentCulturalCenterBtn.classList.remove(culturalCenterActiveClass);
+      culturalCenterBtn.classList.add(culturalCenterActiveClass);
       currentCulturalCenterBtn = culturalCenterBtn;
     }
   });
