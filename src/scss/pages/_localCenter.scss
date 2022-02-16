@@ -13,5 +13,9 @@
     top: 10%;
     right: -5%;
     width: calc(12rem + 15vw);
+
+    @include respond-to('huge') {
+      right: 10%;
+    }
   }
 }

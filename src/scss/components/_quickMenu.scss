@@ -19,6 +19,12 @@
     width: 50%;
     min-height: calc(5rem + 6vw);
     padding: 0.5rem;
+    font-size: 1.6rem;
+
+    @include respond-to('huge') {
+      padding: 0;
+      font-size: 2.5rem;
+    }
 
     a {
       display: flex;
@@ -27,7 +33,6 @@
       padding: 1rem 1.8rem;
       height: 100%;
       text-align: center;
-      font-size: 1.6rem;
       background-color: $c-light-blue;
       color: $c-black;
       @include font-gmarket('Bold');

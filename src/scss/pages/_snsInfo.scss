@@ -8,6 +8,10 @@
     @include respond-to('medium') {
       text-align: center;
     }
+
+    @include respond-to('large') {
+      text-align: left;
+    }
   }
 
   .swiper-slide {
@@ -16,6 +20,13 @@
 
   .more-btn {
     border: 0.8px solid $c-black;
+  }
+}
+
+.sns-swiper-container {
+  @include respond-to('large') {
+    width: 40%;
+    margin-left: auto;
   }
 }
 

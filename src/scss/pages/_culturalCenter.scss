@@ -4,6 +4,17 @@
   h3 {
     margin-bottom: 0.5em;
     text-align: center;
+
+    @include respond-to('huge') {
+      text-align: left;
+    }
+  }
+}
+
+.cultural-center-container {
+  @include respond-to('huge') {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -11,6 +22,10 @@
   padding: 1rem 0;
   border-radius: 2.2rem;
   overflow: hidden;
+
+  @include respond-to('huge') {
+    width: 40%;
+  }
 
   img {
     transition: 0.3s;
@@ -26,6 +41,10 @@
 
 .cultural-center-btn-wrap {
   padding: 1rem 0;
+
+  @include respond-to('huge') {
+    flex-grow: 1;
+  }
 
   ul {
     display: flex;

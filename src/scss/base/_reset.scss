@@ -79,12 +79,12 @@ body {
 	}
 }
 h3 {
-	font-size: calc(1.6rem + 3vw);
+	font-size: calc(1.2rem + 3vw);
 	@include font-gmarket('Bold');
 
 	.section-description {
 		display: none;
-		font-size: calc(1rem + 1vw);
+		font-size: calc(0.6rem + 1vw);
 		color: inherit;
 		font-weight: $fw-normal;
 		@include font-main;

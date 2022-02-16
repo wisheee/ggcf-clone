@@ -8,9 +8,18 @@ header {
   width: 100%;
   height: 5.5rem;
   padding: 0 2rem;
+  color: $c-main-blue;
   background-color: #fff;
   z-index: $z-header;
+
+  @include respond-to('huge') {
+    position: relative;
+    max-width: $max-width;
+    height: 10rem;
+    margin: auto;
+  }
 }
+
 h1 {
   a {
     display: inline-block;
@@ -19,26 +28,53 @@ h1 {
     background: url(#{$path-images}common/main-logo.svg) no-repeat;
     background-size: contain;
 
+    @include respond-to('huge') {
+      padding-bottom: 35%;
+    }
+
     span {
       @include text-hidden;
     }
   }
 }
-.gnb {
+
+.lnb {
   display: none;
+
+  @include respond-to('huge') {
+    display: block;
+  }
   
   ul {
     display: flex;
   }
   
   a {
-    font-size: 1.5rem;
-    padding: 0 1em;
-    color: #6fb3b8;
+    @include font-gmarket('Bold');
+    font-size: 2.1rem;
+    padding: 0 1.5em;
   }
 }
+
+.header-util-list {
+  display: none;
+
+  @include respond-to('huge') {
+    display: flex;
+  }
+
+  a {
+    font-size: 1.4rem;
+    padding: 0 1em;
+  }
+}
+
 .side-menu-open-btn {
   height: 5rem;
   font-size: 3rem;
   color: $c-main-blue;
+
+  @include respond-to('huge') {
+    display: none;
+  }
 }

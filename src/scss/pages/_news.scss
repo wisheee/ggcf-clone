@@ -12,6 +12,10 @@
     @include respond-to('medium') {
       width: 50%;
     }
+
+    @include respond-to('large') {
+      width: 33%;
+    }
   }
 }
 

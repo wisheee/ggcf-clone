@@ -8,4 +8,8 @@
   line-height: 2.2;
   background-color: $c-light-blue;
   color: $c-black;
+
+  @include respond-to('huge') {
+    display: none;
+  }
 }
