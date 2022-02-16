@@ -1,0 +1,37 @@
+.sns-info-section {
+  padding: 12rem 1.5rem 2rem;
+  background-color: $c-light-blue;
+
+  h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5em;
+    @include font-gmarket('Bold');
+  }
+
+  .swiper-slide {
+    width: 50%;
+  }
+
+  .more-btn {
+    border: 0.8px solid $c-black;
+  }
+}
+
+.sns-info-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  span {
+    position: absolute;
+    right: 6%;
+    bottom: 6%;
+    font-size: 3rem;
+    color: #fff;
+  }
+}

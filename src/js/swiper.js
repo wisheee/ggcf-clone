@@ -7,7 +7,7 @@ export const init = () => {
     loop: true,
     speed: 600,
     autoplay: {
-      delay: 3000,
+      delay: 3000
     },
     pagination: {
       el: '.swiper-pagination',
@@ -26,7 +26,7 @@ export const init = () => {
     speed: 800,
     slideToClickedSlide : true,
     autoplay: {
-      delay: 3000,
+      delay: 3000
     }
   });
 
@@ -34,5 +34,16 @@ export const init = () => {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 10
+  });
+
+  new Swiper('.sns-info-section .swiper', {
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    speed: 800,
+    autoplay: {
+      delay: 1500
+    }
   });
 };
