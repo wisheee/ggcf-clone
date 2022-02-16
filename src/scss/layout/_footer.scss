@@ -5,6 +5,7 @@ footer {
   text-align: center;
   background: #333;
   color: #767676;
+  z-index: $z-footer;
 
   @include respond-to('large') {
     padding: 0 2rem 2rem;
