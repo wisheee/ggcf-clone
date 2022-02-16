@@ -3,13 +3,15 @@
   background-color: $c-light-blue;
 
   h3 {
-    font-size: 2.6rem;
     margin-bottom: 2em;
-    @include font-gmarket('Bold');
   }
 
   .swiper-slide {
     width: 80%;
+
+    @include respond-to('medium') {
+      width: 50%;
+    }
   }
 }
 
@@ -18,11 +20,19 @@
   position: relative;
   padding: 4rem 3rem;
   background-color: #fff;
+
+  @include respond-to('medium') {
+    padding: 6rem 3.5rem;
+  }
 }
 
 .news-info-notice {
   font-size: 1.4rem;
   color: #ababab;
+
+  @include respond-to('medium') {
+    font-size: 1.8rem;
+  }
 }
 
 .news-info-title {
@@ -41,6 +51,12 @@
   font-size: 1.2rem;
   line-height: 2.2rem;
   @include ellipsis(3);
+
+  @include respond-to('medium') {
+    height: auto;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 .news-info-footer {
@@ -52,6 +68,10 @@
     right: 0;
     font-size: 3rem;
     color: #777;
+
+    @include respond-to('medium') {
+      font-size: 4rem;
+    }
   }
 }
 

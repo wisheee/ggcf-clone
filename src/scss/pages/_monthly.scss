@@ -5,13 +5,15 @@
   text-align: center;
 
   h3 {
-    font-size: 2.6rem;
     margin-bottom: 0.5em;
-    @include font-gmarket('Bold');
   }
 
   .swiper-slide {
     width: 24rem;
+
+    @include respond-to('medium') {
+      width: 34rem;
+    }
   }
 }
 
@@ -20,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   color: #8ebff0;
-  font-size: 1.6rem;
+  font-size: 4.2vw;
   padding-bottom: 3em;
   @include font-gmarket('Bold');
 
@@ -42,6 +44,10 @@
   height: 34rem;
   border-radius: 1.5rem;
   overflow: hidden;
+
+  @include respond-to('medium') {
+    height: 50rem;
+  }
 
   figure {
     position: absolute;
@@ -81,12 +87,22 @@
       border: 1px solid #fff;
       border-radius: 2em;
       font-size: 1.2rem;
+
+      @include respond-to('medium') {
+        margin-top: 40%;
+        font-size: 1.8rem;
+      }
     }
 
     p {
       font-size: 1.5rem;
       line-height: 1.4;
       padding-top: 0.8em;
+
+      @include respond-to('medium') {
+        font-size: 2rem;
+        padding: 1.2em 1em 0;
+      }
     }
   }
 
@@ -98,6 +114,11 @@
     font-size: 1.2rem;
     padding-top: 1em;
     margin: 1.2em auto;
+
+    @include respond-to('medium') {
+      width: 85%;
+      font-size: 1.4rem;
+    }
 
     div {
       display: flex;
@@ -115,6 +136,10 @@
     width: 100%;
     padding-top: 1em;
     text-align: left;
+
+    @include respond-to('medium') {
+      font-size: 1.5vw;
+    }
 
     @at-root .swiper-slide-active & {
       display: none;

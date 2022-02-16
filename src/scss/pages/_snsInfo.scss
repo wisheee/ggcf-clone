@@ -3,9 +3,11 @@
   background-color: $c-light-blue;
 
   h3 {
-    font-size: 2.6rem;
     margin-bottom: 1.5em;
-    @include font-gmarket('Bold');
+
+    @include respond-to('medium') {
+      text-align: center;
+    }
   }
 
   .swiper-slide {

@@ -6,10 +6,29 @@ footer {
   background: #333;
   color: #767676;
 
+  @include respond-to('large') {
+    padding: 0 2rem 2rem;
+    font-size: 1.6rem;
+  }
+
   p {
     padding: 1.5rem;
     text-align: center;
     line-height: 1.5;
+
+    @include respond-to('large') {
+      padding: 2.5rem;
+      text-align: left;
+    }
+  }
+}
+
+.footer-top {
+  @include respond-to('large') {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #484848;
   }
 }
 
@@ -19,6 +38,11 @@ footer {
   justify-content: center;
   height: 5.4rem;
   border-bottom: 1px solid #484848;
+
+  @include respond-to('large') {
+    border-bottom: none;
+    margin-right: auto;
+  }
 
   a {
     padding: 0 1rem;
@@ -37,9 +61,26 @@ footer {
   }
 }
 
+.footer-company {
+  @include respond-to('large') {
+    display: flex;
+    padding: 2rem;
+  }
+}
+
 .footer-logo-wrap {
+  margin-top: 2rem;
+
+  @include respond-to('large') {
+    flex-basis: 15%;
+  }
+
   img {
     width: 9.6rem;
+
+    @include respond-to('large') {
+      width: 100%;
+    }
   }
 }
 
@@ -49,6 +90,10 @@ footer {
   margin: 0 auto;
   font-size: 1.4rem;
   text-align: left;
+
+  @include respond-to('large') {
+    margin: 0 0 0 2rem;
+  }
 
   button {
     display: flex;
