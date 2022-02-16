@@ -57,18 +57,18 @@ import { init } from './swiper';
     }
 
     // 사이드 메뉴 항목 버튼 클릭 이벤트
-    const sideMenuListBtn = getTarget(e.target, 'js-side-menu-list-btn');
-    if (sideMenuListBtn) {
-      if (sideMenuListBtn.classList.contains(sideMenuActiveClass)) {
-        sideMenuListBtn.classList.remove(sideMenuActiveClass);
+    const targetSideMenuListBtn = getTarget(e.target, 'js-side-menu-list-btn');
+    if (targetSideMenuListBtn) {
+      if (currentSideMenuListBtn)
+        currentSideMenuListBtn.classList.remove(sideMenuActiveClass);
+
+      if (targetSideMenuListBtn == currentSideMenuListBtn) {
         currentSideMenuListBtn = null;
-      } else {
-        if (currentSideMenuListBtn)
-          currentSideMenuListBtn.classList.remove(sideMenuActiveClass);
-        
-        sideMenuListBtn.classList.add(sideMenuActiveClass);
-        currentSideMenuListBtn = sideMenuListBtn;
+        return;
       }
+      
+      targetSideMenuListBtn.classList.add(sideMenuActiveClass);
+      currentSideMenuListBtn = targetSideMenuListBtn;
     }
     
   });
