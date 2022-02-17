@@ -2,6 +2,9 @@ import { init } from './swiper';
 
 (() => {
   const container = document.querySelector('.container');
+  const lnb = document.querySelector('.lnb');
+  const headerBackground = document.querySelector('.header-background');
+  const snbMenuWrap = document.querySelectorAll('.snb-menu-wrap');
   const familySiteWrap = document.querySelector('.js-family-site-btn-wrap');
   const sideMenu = document.querySelector('.js-side-menu-container');
   const culturalCenterActiveClass = 'cultural-center-active';
@@ -9,6 +12,20 @@ import { init } from './swiper';
   let currentCulturalCenterBtn = document.querySelector(`.js-cultural-center-btn.${culturalCenterActiveClass}`);
   const sideMenuActiveClass = 'side-menu-active';
   let currentSideMenuListBtn = document.querySelector(`.${sideMenuActiveClass}`);
+
+  lnb.addEventListener('mouseover', e => {
+    snbMenuWrap.forEach((item) => {
+      item.classList.add('visible-item');
+    });
+    headerBackground.classList.add('visible-item');
+  });
+
+  lnb.addEventListener('mouseout', e => {
+    snbMenuWrap.forEach((item) => {
+      item.classList.remove('visible-item');
+    });
+    headerBackground.classList.remove('visible-item');
+  });
 
   container.addEventListener('click', e => {
 

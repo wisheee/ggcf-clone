@@ -2,6 +2,7 @@ html {
 	line-height: 1.2;
 	font-size: 62.5%;
 }
+
 body {
 	font-weight: $fw-normal;
 	color: $c-black;
@@ -13,7 +14,18 @@ body {
 		overflow: hidden;
 		height: 100%;
 	}
+
+	.visible-item {
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	.hidden-item {
+		visibility: hidden;
+		opacity: 0;
+	}
 }
+
 .inner {
   position: relative;
   width: 100%;
@@ -26,6 +38,7 @@ body {
     padding: 0 3rem;
   }
 }
+
 h3 {
 	font-size: calc(1.2rem + 3vw);
 	@include font-gmarket('Bold');
