@@ -1,7 +1,7 @@
 .local-center-section {
   position: relative;
   overflow: hidden;
-  padding: 10rem 1.5rem;
+  padding: 10rem 0;
   font-size: calc(1rem + 1vw);
 
   h3 {
@@ -10,7 +10,7 @@
 
   img {
     position: absolute;
-    top: 10%;
+    top: -25%;
     right: -5%;
     width: calc(12rem + 15vw);
 

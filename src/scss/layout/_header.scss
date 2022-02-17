@@ -7,7 +7,6 @@ header {
   justify-content: space-between;
   width: 100%;
   height: 5.5rem;
-  padding: 0 2rem;
   color: $c-main-blue;
   background-color: #fff;
   z-index: $z-header;
@@ -20,11 +19,17 @@ header {
   }
 }
 
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1 {
   a {
     display: inline-block;
-    width: 20rem;
-    padding-bottom: 20%;
+    width: 12rem;
+    padding-bottom: 35%;
     background: url(#{$path-images}common/main-logo.svg) no-repeat;
     background-size: contain;
 

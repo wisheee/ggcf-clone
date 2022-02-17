@@ -1,5 +1,5 @@
 .cultural-center-section {
-  padding: 12rem 1.5rem 2rem;
+  padding: 12rem 0 2rem;
 
   h3 {
     margin-bottom: 0.5em;
@@ -40,7 +40,7 @@
 }
 
 .cultural-center-btn-wrap {
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
 
   @include respond-to('huge') {
     flex-grow: 1;
@@ -53,18 +53,22 @@
 
   button {
     margin-right: 0.5rem;
-    padding: 0 1.2rem;
+    padding: 0 1.3rem;
     height: calc(3rem + 3.3vw);
     color: $c-main-blue;
     background-color: #fff;
     border: 1.5px solid $c-main-blue;
     border-radius: calc(3rem + 3.3vw);
-    font-size: calc(0.8rem + 1.07vw);
+    font-size: 1rem;
     @include font-gmarket('Medium');
 
     &.cultural-center-active {
       color: #fff;
       background-color: $c-main-blue;
+    }
+
+    span {
+      display: block;
     }
   }
 }
