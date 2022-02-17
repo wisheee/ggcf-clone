@@ -15,6 +15,10 @@
     flex-wrap: nowrap;
   }
 
+  @include respond-to('huge') {
+    padding: 0;
+  }
+
   li {
     width: 50%;
     min-height: calc(5rem + 6vw);

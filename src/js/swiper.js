@@ -32,18 +32,43 @@ export const init = () => {
 
   new Swiper('.news-section .swiper', {
     loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 10
+    slidesPerView: 2,
+    spaceBetween: 10,
+    breakpoints: {
+      '767': {
+        slidesPerView: 2,
+        spaceBetween: 25
+      },
+      '991': {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
   });
 
   new Swiper('.sns-info-section .swiper', {
-    centeredSlides: true,
     loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 40,
     speed: 800,
     autoplay: {
       delay: 1500
+    },
+    breakpoints: {
+      '767': {
+        centeredSlides: true,
+        slidesPerView: 2,
+        spaceBetween: 25
+      },
+      '991': {
+        centeredSlides: true,
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      '1199': {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
     }
   });
 };

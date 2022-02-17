@@ -20,10 +20,19 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
+
+  @include respond-to('huge') {
+    max-width: 140rem;
+    padding: 0 3rem;
+  }
 }
 h3 {
 	font-size: calc(1.2rem + 3vw);
 	@include font-gmarket('Bold');
+
+  @include respond-to('large') {
+    font-size: 4rem;
+  }
 
 	.section-description {
 		display: none;
@@ -35,5 +44,9 @@ h3 {
 		@include respond-to('medium') {
 			display: block;
 		}
+
+    @include respond-to('large') {
+      font-size: 1.6rem;
+    }
 	}
 }

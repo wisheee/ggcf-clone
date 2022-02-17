@@ -4,10 +4,20 @@
   text-align: center;
   @include font-gmarket;
 
+  @include respond-to('large') {
+    padding-bottom: 10rem;
+  }
+
   h2 {
-    padding-top: 5%;
+    padding: 5% 0;
     font-size: 8vw;
     font-weight: normal;
+
+    @include respond-to('large') {
+      flex-grow: 1;
+      text-align: left;
+      font-size: 6rem;
+    }
 
     p {
       font-size: calc(0.8rem + 1.8vw);
@@ -15,8 +25,19 @@
     }
   }
 
+  .intro-slide {
+    @include respond-to('large') {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   .swiper-pagination {
     font-size: 1.4rem;
+
+    @include respond-to('large') {
+      text-align: left;
+    }
   
     .swiper-pagination-bullet {
       width: auto;
@@ -43,12 +64,21 @@
 }
 
 .intro-description {
-  font-size: calc(0.8rem + 1.4vw);
+  font-size: 1.3rem;
+  font-weight: $fw-normal;
   @include font-main;
+
+  @include respond-to('medium') {
+    font-size: 1.8rem;
+  }
 }
 
 .main-intro-image {
-  @include respond-to('large') {
+  @include respond-to('medium') {
     width: 70%;
+  }
+
+  @include respond-to('large') {
+    width: 50%;
   }
 }

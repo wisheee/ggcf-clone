@@ -5,14 +5,19 @@
     margin-bottom: 0.5em;
     text-align: center;
 
-    @include respond-to('huge') {
+    @include respond-to('large') {
       text-align: left;
     }
+  }
+
+  .float-more-btn {
+    top: 1rem;
+    right: 3rem;
   }
 }
 
 .cultural-center-container {
-  @include respond-to('huge') {
+  @include respond-to('large') {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -23,7 +28,7 @@
   border-radius: 2.2rem;
   overflow: hidden;
 
-  @include respond-to('huge') {
+  @include respond-to('large') {
     width: 40%;
   }
 
@@ -42,13 +47,17 @@
 .cultural-center-btn-wrap {
   padding: 1rem 0.5rem;
 
-  @include respond-to('huge') {
+  @include respond-to('large') {
     flex-grow: 1;
   }
 
   ul {
     display: flex;
     padding: 0.5rem 0;
+
+    @include respond-to('large') {
+      padding: 1.5rem 0;
+    }
   }
 
   button {
@@ -62,6 +71,26 @@
     font-size: 1rem;
     @include font-gmarket('Medium');
 
+    @include respond-to('medium') {
+      padding: 0 calc(1.4rem + 1.5vw);
+      font-size: calc(0.8rem + 1.07vw);
+      border-width: 2px;
+    }
+
+    @include respond-to('large') {
+      height: calc(2rem + 3.3vw);
+      border-radius: calc(2rem + 3.3vw);
+      padding: 0 calc(0.7rem + 1vw);
+      font-size: calc(0.5rem + 1.07vw);
+    }
+
+    @include respond-to('huge') {
+      height: 7.5rem;
+      border-radius: 5rem;
+      padding: 0 3rem;
+      font-size: 2rem;
+    }
+
     &.cultural-center-active {
       color: #fff;
       background-color: $c-main-blue;
@@ -69,6 +98,10 @@
 
     span {
       display: block;
+
+      @include respond-to('medium') {
+        display: inline-block;
+      }
     }
   }
 }

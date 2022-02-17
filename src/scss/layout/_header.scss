@@ -23,6 +23,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
 h1 {
@@ -70,7 +71,11 @@ h1 {
 
   a {
     font-size: 1.4rem;
-    padding: 0 1em;
+    margin: 0 1em;
+
+    &:hover {
+      border-bottom: 1px solid $c-main-blue;
+    }
   }
 }
 
