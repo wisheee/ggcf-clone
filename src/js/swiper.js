@@ -25,9 +25,9 @@ export const init = () => {
     spaceBetween: 30,
     speed: 800,
     slideToClickedSlide : true,
-    // autoplay: {
-    //   delay: 3000
-    // }
+    autoplay: {
+      delay: 3000
+    }
   });
 
   new Swiper('.news-section .swiper', {
