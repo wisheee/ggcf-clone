@@ -39,7 +39,20 @@
       text-align: center;
       background-color: $c-light-blue;
       color: $c-black;
+      transition: 0.3s;
       @include font-gmarket('Bold');
+
+      &:hover {
+        color: $c-main-blue;
+
+        i {
+          transform: translateX(1rem);
+        }
+      }
+
+      i {
+        transition: 0.3s;
+      }
     }
   }
 }

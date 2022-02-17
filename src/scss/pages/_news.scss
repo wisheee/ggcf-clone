@@ -5,6 +5,10 @@
   h3 {
     margin-bottom: 2em;
   }
+
+  .swiper {
+    padding-top: 3.5rem;
+  }
 }
 
 .news-info-wrap {
@@ -12,15 +16,31 @@
   position: relative;
   padding: 4rem 3rem;
   background-color: #fff;
+  transition: 0.3s;
 
   @include respond-to('medium') {
     padding: 6rem 3.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-2rem);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+
+    .news-info-title {
+      color: $c-main-blue;
+    }
+
+    .xi-plus-thin {
+      transform: rotate(180deg);
+      color: $c-main-blue;
+    }
   }
 }
 
 .news-info-notice {
   font-size: 1.4rem;
   color: #ababab;
+  transition: 0.3s;
 
   @include respond-to('medium') {
     font-size: 1.8rem;
@@ -64,6 +84,7 @@
     right: 0;
     font-size: 3rem;
     color: #777;
+    transition: 0.3s;
 
     @include respond-to('medium') {
       font-size: 4rem;

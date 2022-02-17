@@ -53,12 +53,19 @@ h1 {
   
   & > ul {
     display: flex;
+
+    & > li {
+      &:hover {
+        color: $c-black;
+      }
+    }
   }
   
   a {
     @include font-gmarket('Bold');
     font-size: 2.1rem;
     padding: 0 1.5em;
+    transition: 0.3s;
   }
 }
 
