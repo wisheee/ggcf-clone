@@ -2,6 +2,7 @@ import { init } from './swiper';
 
 (() => {
   const container = document.querySelector('.container');
+  const scrollTopBtn = document.querySelector('.scroll-top-btn');
   const lnb = document.querySelector('.lnb');
   const headerBackground = document.querySelector('.header-background');
   const snbMenuWrap = document.querySelectorAll('.snb-menu-wrap');
@@ -87,6 +88,13 @@ import { init } from './swiper';
       targetSideMenuListBtn.classList.add(sideMenuActiveClass);
       currentSideMenuListBtn = targetSideMenuListBtn;
     }
+
+    // 맨 위로 이동 버튼 클릭 이벤트
+    const scrollTopBtn = getTarget(e.target, 'js-scroll-top-btn');
+    if (scrollTopBtn) {
+      // window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     
   });
 
@@ -103,9 +111,22 @@ import { init } from './swiper';
     return elem;
   }
 
+  function handleScrollTopBtn() {
+    if (window.pageYOffset > 300) {
+      scrollTopBtn.classList.add('attached');
+    } else {
+      scrollTopBtn.classList.remove('attached');
+    }
+  }
+
   window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('before-load');
   });
 
+  window.addEventListener('scroll', e => {
+    handleScrollTopBtn();
+  });
+
   init();
+  handleScrollTopBtn();
 })();

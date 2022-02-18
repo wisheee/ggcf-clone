@@ -75,3 +75,42 @@
     }
   }
 }
+
+// 맨 위로 이동 버튼
+.scroll-top-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  z-index: $z-topBtn;
+  opacity: 0;
+  transition: 0.5s;
+
+  @include respond-to('large') {
+    right: 3rem;
+    bottom: 1.5rem;
+  }
+
+  &.attached {
+    bottom: 2rem;
+    opacity: 1;
+
+    @include respond-to('large') {
+      bottom: 3rem;
+    }
+  }
+  
+  button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $c-main-blue;
+    color: #fff;
+    box-shadow: 0 0 0 rgb(88 120 243 / 40%);
+    animation: btn-shadow-ani 2s infinite;
+
+    @include respond-to('large') {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}

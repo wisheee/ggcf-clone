@@ -45,3 +45,16 @@
     transform: scale(1.2);
   }
 }
+
+// 맨 위로 이동 버튼 그림자 애니메이션
+@keyframes btn-shadow-ani {
+  0% {
+    box-shadow: 0 0 0 0 rgb(88 120 243 / 40%);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgb(88 120 243 / 0%);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(88 120 243 / 0%);
+  }
+}
