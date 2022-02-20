@@ -5,6 +5,7 @@
   font-size: calc(0.6rem + 1vw);
 
   @include respond-to('large') {
+    padding: 10rem 0 20rem;
     font-size: 1.6rem;
   }
 

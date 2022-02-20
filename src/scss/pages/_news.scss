@@ -1,4 +1,5 @@
 .news-section {
+  position: relative;
   padding: 12rem 0 8rem;
   background-color: $c-light-blue;
 
@@ -8,6 +9,23 @@
 
   .swiper {
     padding-top: 3.5rem;
+  }
+
+  .background-letter-7 {
+    @extend %background-letter;
+    bottom: -20%;
+    right: 10%;
+    width: 28rem;
+    height: 28rem;
+    transform: translate3d(0, 0, 0);
+    background-image: url('../images/common/main-bg-s.svg');
+    animation: background-letter-move-x 10s linear infinite alternate;
+
+    @include respond-to('huge') {
+      bottom: 10%;
+      width: 70rem;
+      height: 35rem;
+    }
   }
 }
 

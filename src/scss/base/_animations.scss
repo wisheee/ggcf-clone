@@ -58,3 +58,22 @@
     box-shadow: 0 0 0 0 rgb(88 120 243 / 0%);
   }
 }
+
+// 배경 글자 아이콘 움직임 애니메이션
+@keyframes background-letter-move-x {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+
+@keyframes background-letter-move-y {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 30%, 0);
+  }
+}

@@ -1,4 +1,5 @@
 .sns-info-section {
+  position: relative;
   padding: 12rem 0 2rem;
   background-color: $c-light-blue;
 
@@ -22,6 +23,38 @@
   .float-more-btn {
     left: 6rem;
     top: 50%;
+  }
+
+  .background-letter-5 {
+    @extend %background-letter;
+    top: -20%;
+    right: 0;
+    width: 45rem;
+    height: 45rem;
+    transform: translate3d(0, 0, 0);
+    background-image: url('../images/common/main-bg-o.svg');
+    animation: background-letter-move-y 10s linear infinite alternate;
+    display: none;
+
+    @include respond-to('huge') {
+      display: inline-block;
+    }
+  }
+
+  .background-letter-6 {
+    @extend %background-letter;
+    top: 0;
+    left: -10%;
+    width: 50rem;
+    height: 50rem;
+    transform: translate3d(0, 0, 0);
+    background-image: url('../images/common/main-bg-n.svg');
+    animation: background-letter-move-x 10s linear infinite alternate;
+    display: none;
+
+    @include respond-to('huge') {
+      display: inline-block;
+    }
   }
 }
 

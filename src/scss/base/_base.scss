@@ -26,6 +26,10 @@ body {
 	}
 }
 
+.container {
+	overflow-x: hidden;
+}
+
 .inner {
   position: relative;
   width: 100%;

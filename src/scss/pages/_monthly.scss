@@ -1,4 +1,5 @@
 .monthly-section {
+  position: relative;
   padding: 15rem 0 3rem;
   background-color: $c-main-blue;
   color: #fff;
@@ -36,6 +37,41 @@
 
     &:hover {
       color: #8ebff0;
+    }
+  }
+
+  .background-letter-1 {
+    @extend %background-letter;
+    top: 10%;
+    right: 10%;
+    width: 27rem;
+    height: 45rem;
+    transform: translate3d(0, 0, 0);
+    background-image: url('../images/common/main-bg-l.svg');
+    animation: background-letter-move-x 10s linear infinite alternate;
+
+    @include respond-to('huge') {
+      top: 0%;
+      width: 36rem;
+      height: 59.8rem;
+    }
+  }
+
+  .background-letter-2 {
+    @extend %background-letter;
+    top: 50%;
+    left: -20%;
+    width: 30rem;
+    height: 30rem;
+    transform: translate3d(0, 0, 0);
+    background-image: url('../images/common/main-bg-g.svg');
+    animation: background-letter-move-y 3s linear infinite alternate;
+
+    @include respond-to('huge') {
+      top: 30%;
+      left: -10%;
+      width: 45rem;
+      height: 45rem;
     }
   }
 }
