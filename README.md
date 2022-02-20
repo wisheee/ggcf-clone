@@ -7,7 +7,7 @@
 
 ### 클론 대상 사이트  
 
-[경기생활문화센터](https://glife.ggcf.kr)
+[경기생활문화센터](https://glife.ggcf.kr){:target="_blank" rel="noopener"}
 
 ### 해당 사이트를 클론코딩한 이유
 
