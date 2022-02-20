@@ -69,6 +69,8 @@
   @include ellipsis(3);
 
   @include respond-to('medium') {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
     height: auto;
     font-size: 1.8rem;
     line-height: 2.8rem;
