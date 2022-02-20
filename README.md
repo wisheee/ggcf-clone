@@ -3,11 +3,11 @@
 웹 퍼블리셔로서 학습 및 포트폴리오를 위한 클론코딩 로드맵 중 첫 번째 프로젝트입니다.  
 
 ### 결과물 사이트
-<a href="https://wisheee.github.io/ggcf-clone/" target="_blank">VIEW</a>
+[VIEW](https://wisheee.github.io/ggcf-clone/)
 
 ### 클론 대상 사이트  
 
-[경기생활문화센터](https://glife.ggcf.kr){:target="_blank" rel="noopener"}
+[경기생활문화센터](https://glife.ggcf.kr)
 
 ### 해당 사이트를 클론코딩한 이유
 
