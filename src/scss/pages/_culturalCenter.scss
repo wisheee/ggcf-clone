@@ -1,13 +1,17 @@
 .cultural-center-section {
   position: relative;
   padding: 12rem 0 2rem;
+  text-align: center;
+
+  @include respond-to('large') {
+    text-align: left;
+  }
 
   h3 {
     margin-bottom: 0.5em;
-    text-align: center;
 
-    @include respond-to('large') {
-      text-align: left;
+    @include respond-to('medium') {
+      margin-bottom: 0;
     }
   }
 

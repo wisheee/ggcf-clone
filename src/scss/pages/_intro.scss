@@ -11,7 +11,7 @@
   h2 {
     padding: 5% 0;
     font-size: 8vw;
-    font-weight: normal;
+    font-weight: $fw-normal;
 
     @include respond-to('large') {
       flex-grow: 1;
@@ -19,7 +19,9 @@
       font-size: 6rem;
     }
 
-    p {
+    strong {
+      display: block;
+      font-weight: $fw-normal;
       font-size: calc(0.8rem + 1.8vw);
       margin-bottom: 0.6em;
     }
@@ -64,6 +66,7 @@
 }
 
 .intro-description {
+  display: block;
   font-size: 1.3rem;
   font-weight: $fw-normal;
   @include font-main;

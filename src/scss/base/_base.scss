@@ -50,20 +50,21 @@ h3 {
   @include respond-to('large') {
     font-size: 4rem;
   }
+}
 
-	.section-description {
-		display: none;
-		font-size: calc(0.6rem + 1vw);
-		color: inherit;
-		font-weight: $fw-normal;
-		@include font-main;
+.section-description {
+	display: none;
+	margin-bottom: 1em;
+	font-size: calc(0.6rem + 1vw);
+	color: inherit;
+	font-weight: $fw-normal;
+	@include font-main;
 
-		@include respond-to('medium') {
-			display: block;
-		}
+	@include respond-to('medium') {
+		display: block;
+	}
 
-    @include respond-to('large') {
-      font-size: 1.6rem;
-    }
+	@include respond-to('large') {
+		font-size: 1.6rem;
 	}
 }
