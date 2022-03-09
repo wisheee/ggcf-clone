@@ -1,4 +1,4 @@
-import { initSwiper } from './swiper';
+import { initSwiper } from './common/swiper';
 import { onNavigationMouseEvent } from './layout/header';
 import { onFamilySiteBtnClick } from './layout/footer';
 import { onCulturalCenterBtnClick } from './pages/culturalCenter';
