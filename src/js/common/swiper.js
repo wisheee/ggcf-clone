@@ -1,4 +1,11 @@
-export const init = () => {
+const initSwiper = () => {
+  attachIntroSwiper();
+  attachMonthlySwiper();
+  attachNewsSwiper();
+  attachSnsSwiper();
+}
+
+const attachIntroSwiper = () => {
   new Swiper('.intro-section .swiper', {
     effect: 'fade',
     fadeEffect: {
@@ -17,7 +24,9 @@ export const init = () => {
       }
     }
   });
+}
 
+const attachMonthlySwiper = () => {
   new Swiper('.monthly-section .swiper', {
     centeredSlides: true,
     loop: true,
@@ -29,7 +38,9 @@ export const init = () => {
       delay: 3000
     }
   });
+}
 
+const attachNewsSwiper = () => {
   new Swiper('.news-section .swiper', {
     loop: true,
     slidesPerView: 2,
@@ -45,7 +56,9 @@ export const init = () => {
       }
     }
   });
+}
 
+const attachSnsSwiper = () => {
   new Swiper('.sns-info-section .swiper', {
     loop: true,
     slidesPerView: 3,
@@ -71,4 +84,8 @@ export const init = () => {
       }
     }
   });
+}
+
+export {
+  initSwiper
 };
